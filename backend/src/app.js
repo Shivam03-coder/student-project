@@ -27,7 +27,9 @@ app.use(passport.initialize());
 
 // Route handlers
 import { Authroutes } from "./routes/userauthRoute.js";
+import { paymnetRoutes } from "./routes/paymentRoutes.js";
 
 app.use("/api/v1/app/user", Authroutes);
+app.use("/api/v1/app/product", paymnetRoutes);
 
 export { app };
